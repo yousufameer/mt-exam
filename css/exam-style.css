@@ -1,0 +1,182 @@
+/* =============================================
+   Exam Management Plugin — Frontend Styles
+   ============================================= */
+
+/* Exam List Shortcode */
+#exam-term-filter {
+    padding: 8px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+#exam-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.exam-card {
+    background: #fff;
+    border: 1px solid #e2e4e7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    transition: box-shadow 0.15s;
+}
+
+.exam-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.exam-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin: 0 0 10px;
+}
+
+.exam-card p {
+    font-size: 13px;
+    color: #555;
+    margin: 4px 0;
+}
+
+/* Status badges */
+.status-upcoming  { color: #1a73e8; font-weight: 600; }
+.status-ongoing   { color: #1e7e34; font-weight: 600; }
+.status-completed { color: #757575; font-weight: 600; }
+
+/* Pagination */
+#exam-pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+#exam-pagination button {
+    padding: 8px 16px;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+#exam-pagination button:hover {
+    background: #f0f6fc;
+    border-color: #2271b1;
+    color: #2271b1;
+}
+
+.em-page-info {
+    font-size: 12px;
+    color: #888;
+}
+
+.em-loading    { color: #888; font-style: italic; }
+.em-no-results { color: #888; }
+.em-error      { color: #c62828; }
+
+/* Student Result Lookup */
+#student-search {
+    padding: 8px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 260px;
+    max-width: 100%;
+}
+
+#search-result {
+    padding: 8px 16px;
+    background: #2271b1;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background 0.15s;
+}
+
+#search-result:hover { background: #135e96; }
+
+#result-output {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+#result-output p {
+    padding: 8px 12px;
+    background: #f6f7f7;
+    border-radius: 4px;
+    margin: 4px 0;
+}
+
+/* Top Students Shortcode */
+.em-top-students-wrap { padding: 1rem 0; }
+
+.em-term-block { margin-bottom: 2.5rem; }
+
+.em-term-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 1.25rem;
+    color: #1a1a1a;
+}
+
+.em-top-students-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.em-top-student-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 0.5px solid #e5e5e5;
+    background: #fff;
+}
+
+.em-top-student-item:nth-child(1) { background: #FAEEDA; border: 1.5px solid #FAC775; }
+.em-top-student-item:nth-child(2) { background: #F1EFE8; border: 1.5px solid #B4B2A9; }
+.em-top-student-item:nth-child(3) { background: #FAECE7; border: 1.5px solid #F0997B; }
+
+.em-rank {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.em-top-student-item:nth-child(1) .em-rank { background: #EF9F27; color: #412402; }
+.em-top-student-item:nth-child(2) .em-rank { background: #B4B2A9; color: #2C2C2A; }
+.em-top-student-item:nth-child(3) .em-rank { background: #D85A30; color: #4A1B0C; }
+
+.em-student-name { font-size: 15px; font-weight: 500; flex: 1; }
+
+.em-top-student-item:nth-child(1) .em-student-name { color: #633806; }
+.em-top-student-item:nth-child(2) .em-student-name { color: #444441; }
+.em-top-student-item:nth-child(3) .em-student-name { color: #712B13; }
+
+.em-marks { font-size: 13px; margin-left: auto; }
+
+.em-top-student-item:nth-child(1) .em-marks { color: #854F0B; }
+.em-top-student-item:nth-child(2) .em-marks { color: #5F5E5A; }
+.em-top-student-item:nth-child(3) .em-marks { color: #993C1D; }
